@@ -288,6 +288,26 @@ html {
   gap: 4.8rem;
 }
 
+@media only screen and (max-width: 95.43em) {
+  .navigation-lists {
+    gap: 3.5rem;
+    margin-left: 8rem;
+  }
+}
+
+@media only screen and (max-width: 78.13em) {
+  .navigation-lists {
+    margin-left: auto;
+    margin-right: 15rem;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .navigation-lists {
+    margin-right: 8rem;
+  }
+}
+
 .navigation-lists:link {
   text-decoration: none;
 }
@@ -299,7 +319,6 @@ html {
   font-weight: 500;
   font-size: 1.8rem;
   font-family: "Roboto", sans-serif;
-  letter-spacing: 0.72px;
 }
 
 .header_button-lists {
@@ -307,7 +326,19 @@ html {
   flex-direction: row;
   gap: 3.25rem;
   margin-right: 15rem;
-  display: none;
+  text-align: left;
+}
+
+@media (max-width: 108em) {
+  .header_button-lists {
+    margin-right: 10rem;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .header_button-lists {
+    margin-right: 4rem;
+  }
 }
 
 .navigation_button-hidden {
@@ -334,6 +365,12 @@ html {
 @media only screen and (max-width: 95.43em) {
   .cover-box {
     margin-left: 25rem;
+  }
+}
+
+@media only screen and (max-width: 78.13em) {
+  .cover-box {
+    margin-left: 0;
   }
 }
 
@@ -397,9 +434,22 @@ html {
   justify-self: start;
 }
 
+@media (max-width: 108em) {
+  .social-link-box {
+    transform: translateX(5rem);
+  }
+}
+
 @media only screen and (max-width: 95.43em) {
   .social-link-box {
+    transform: translateX(-5rem);
     justify-self: center;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .social-link-box {
+    transform: translateX(1rem);
   }
 }
 
@@ -776,9 +826,17 @@ html {
 
 .description_box {
   display: flex;
-  max-width: 60.6rem;
+  max-width: 57.8rem;
   padding: 26.9rem 0 26.9rem 17.4rem;
   flex-direction: column;
+}
+
+@media only screen and (max-width: 78.13em) {
+  .description_box {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20rem 0;
+  }
 }
 
 .description_navigation {
@@ -896,8 +954,15 @@ html {
   margin: 24.9rem 32.6rem auto auto;
   display: flex;
   flex-direction: column;
-  max-width: 65.8rem;
+  max-width: 57.8rem;
   max-height: 40.5rem;
+}
+
+@media only screen and (max-width: 78.13em) {
+  .hero-box {
+    align-items: center;
+    margin: auto;
+  }
 }
 
 .btn-box {
@@ -913,6 +978,12 @@ html {
 
 .hero-margin {
   margin: 2.4rem auto 2.4rem 7.95rem;
+}
+
+@media only screen and (max-width: 78.13em) {
+  .hero-margin {
+    margin: 2.4rem auto 2.4rem auto;
+  }
 }
 
 .btn-add-to {

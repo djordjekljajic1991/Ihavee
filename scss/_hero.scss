@@ -11,18 +11,16 @@
   }
 }
 .hero-box {
-  margin: 24.9rem min(32.6rem) auto auto;
+  margin: 24.9rem 32.6rem auto auto;
   display: flex;
   flex-direction: column;
-  max-width: 65.8rem;
+  max-width: 57.8rem;
   max-height: 40.5rem;
+  @include respond(tab-land) {
+    align-items: center;
+    margin: auto;
+  }
 }
-
-// .hero-margin {
-//   display: inline-block;
-//   //margin: 2.4rem auto 2.4rem 7.95rem;
-//   padding-left: 7.95rem;
-// }
 
 .btn-box {
   display: flex;
@@ -35,6 +33,9 @@
 }
 .hero-margin {
   margin: 2.4rem auto 2.4rem 7.95rem;
+  @include respond(tab-land) {
+    margin: 2.4rem auto 2.4rem auto;
+  }
 }
 .btn-add-to {
   color: $color-orange-dark;

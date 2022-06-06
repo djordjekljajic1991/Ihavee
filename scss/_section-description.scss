@@ -6,9 +6,14 @@
 }
 .description_box {
   display: flex;
-  max-width: 60.6rem;
+  max-width: 57.8rem;
   padding: 26.9rem 0 26.9rem 17.4rem;
   flex-direction: column;
+  @include respond(tab-land) {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20rem 0;
+  }
 }
 .description_navigation {
   display: flex;
