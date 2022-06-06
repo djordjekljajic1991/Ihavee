@@ -1,14 +1,19 @@
 .footer {
   display: grid;
   grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
-
-  @include respond(tab-land) {
-    grid-template-columns: 1.5fr repeat(3, 1fr);
-  }
-
   background-color: $color-background-grey-light;
   padding-top: 13.2rem;
   padding-bottom: 12.8rem;
+  @include respond(tab-land) {
+    grid-template-columns: 1.5fr repeat(3, 1fr);
+    padding-top: 8rem;
+    padding-bottom: 7rem;
+  }
+  @include respond(phone) {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+  }
 }
 .address-col {
   margin-left: 14.2rem;

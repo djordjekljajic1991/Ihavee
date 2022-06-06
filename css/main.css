@@ -189,6 +189,12 @@ html {
   }
 }
 
+@media only screen and (max-width: 39.25em) {
+  .galery_header-box {
+    grid-template-columns: 1fr;
+  }
+}
+
 .galery_header_lists-box {
   margin: 3.8rem auto 11.6rem 14.2rem;
 }
@@ -266,6 +272,13 @@ html {
   }
 }
 
+@media only screen and (max-width: 39.25em) {
+  #item-big-left {
+    grid-column: 1;
+    margin-top: 4rem;
+  }
+}
+
 .first {
   background-image: url(../img/MaskGroup6big.png);
 }
@@ -294,6 +307,14 @@ html {
   margin-bottom: 12rem;
 }
 
+@media only screen and (max-width: 39.25em) {
+  .navigation_links-box {
+    justify-content: end;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+  }
+}
+
 .navigation-lists {
   display: flex;
   flex-direction: row;
@@ -318,6 +339,12 @@ html {
 @media only screen and (max-width: 56.25em) {
   .navigation-lists {
     margin-right: 8rem;
+  }
+}
+
+@media only screen and (max-width: 39.25em) {
+  .navigation-lists {
+    display: none;
   }
 }
 
@@ -351,6 +378,12 @@ html {
 @media only screen and (max-width: 56.25em) {
   .header_button-lists {
     margin-right: 4rem;
+  }
+}
+
+@media only screen and (max-width: 39.25em) {
+  .header_button-lists {
+    align-self: end;
   }
 }
 
@@ -440,6 +473,18 @@ html {
 .sefety-bay-cover {
   margin-top: 1.4rem !important;
   margin-bottom: 22rem;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .sefety-bay-cover {
+    margin-bottom: 16rem;
+  }
+}
+
+@media only screen and (max-width: 39.25em) {
+  .sefety-bay-cover {
+    margin-bottom: 4rem;
+  }
 }
 
 .social-link-box {
@@ -735,9 +780,27 @@ html {
   align-items: center;
 }
 
+@media only screen and (max-width: 39.25em) {
+  .order-container {
+    grid-template-columns: 1fr;
+  }
+}
+
 .picture-container {
   margin: 14.5rem 0 auto auto;
   align-self: center;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .picture-container {
+    margin-top: 10rem;
+  }
+}
+
+@media only screen and (max-width: 39.25em) {
+  .picture-container {
+    margin-top: 5rem;
+  }
 }
 
 .picture-order {
@@ -764,6 +827,12 @@ html {
   row-gap: 4.6rem;
   justify-self: start;
   margin-left: 2rem;
+}
+
+@media only screen and (max-width: 39.25em) {
+  .data-container {
+    justify-self: center;
+  }
 }
 
 .order-form {
@@ -1047,6 +1116,16 @@ html {
 @media only screen and (max-width: 78.13em) {
   .footer {
     grid-template-columns: 1.5fr repeat(3, 1fr);
+    padding-top: 8rem;
+    padding-bottom: 7rem;
+  }
+}
+
+@media only screen and (max-width: 39.25em) {
+  .footer {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
   }
 }
 

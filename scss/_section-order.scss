@@ -16,10 +16,19 @@
   justify-items: end;
   margin: 0 auto 0 auto;
   align-items: center;
+  @include respond(phone) {
+    grid-template-columns: 1fr;
+  }
 }
 .picture-container {
   margin: 14.5rem 0 auto auto;
   align-self: center;
+  @include respond(tab-port) {
+    margin-top: 10rem;
+  }
+  @include respond(phone) {
+    margin-top: 5rem;
+  }
 }
 .picture-order {
   max-width: 67rem;
@@ -42,6 +51,9 @@
   row-gap: 4.6rem;
   justify-self: start;
   margin-left: 2rem;
+  @include respond(phone) {
+    justify-self: center;
+  }
 }
 .order-form {
   margin: 7.2rem auto 12.8rem 0;
