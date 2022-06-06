@@ -1,0 +1,44 @@
+.hero {
+  display: flex;
+  min-height: 88.7rem;
+  background-image: url(../img/MaskGroup13.png);
+
+  background-size: cover;
+  background-position: center;
+
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em) {
+    background-image: url(../img/MaskGroup13large.png);
+  }
+}
+.hero-box {
+  margin: 24.9rem min(32.6rem) auto auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 65.8rem;
+  max-height: 40.5rem;
+}
+
+// .hero-margin {
+//   display: inline-block;
+//   //margin: 2.4rem auto 2.4rem 7.95rem;
+//   padding-left: 7.95rem;
+// }
+
+.btn-box {
+  display: flex;
+  gap: 5rem;
+}
+.btn-bay {
+  color: $color-white;
+  background-color: $color-orange-dark;
+  padding: 1.6rem 8rem 1.6rem 8rem;
+}
+.hero-margin {
+  margin: 2.4rem auto 2.4rem 7.95rem;
+}
+.btn-add-to {
+  color: $color-orange-dark;
+  border: 2px solid $color-orange-dark;
+
+  padding: 1.6rem 4rem;
+}

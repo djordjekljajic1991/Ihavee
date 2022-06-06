@@ -1,0 +1,131 @@
+// COLOR VARIABLES
+$color-orange-dark: #ff9300;
+$color-orange-light: #ffc107;
+$color-black: #000;
+$color-white: #ffffff;
+$color-background-grey-dark: #dfe3eb;
+$color-background-grey-light: #ebeff7;
+$color-grey-light-1: #f9f7f6;
+$color-grey-light-2: #aaa;
+$color-grey-description: #656565;
+// FONT VARIABLES
+$font-primary: "Oswald", sans-serif;
+$font-secondary: "Roboto", sans-serif;
+
+//mixins
+
+@mixin respond($breakpoint) {
+  @if $breakpoint==phone {
+    @media only screen and(max-width: 40em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==tab-port {
+    @media only screen and (max-width: 59em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==tab-land {
+    @media only screen and (max-width: 78.13em) {
+      //1250px
+      @content;
+    }
+  }
+  @if $breakpoint==fix-other {
+    @media only screen and (max-width: 95.43em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint==desktop {
+    @media (max-width: 108em) {
+      @content;
+    }
+  }
+}
+//////
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+
+  @include respond(desktop) {
+    font-size: 56.25%; //9
+  }
+  @include respond(tab-land) {
+    font-size: 50%;
+  }
+}
+
+.lists {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  //gap: 1.6rem;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  font-weight: 500;
+  font-size: 2.4rem;
+  letter-spacing: 0.144rem;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 8px;
+}
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: #00000028 0 2px 4px;
+}
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 0.2rem 0.6rem rgba($color-black, 0.29);
+}
+
+.btn-tab,
+.btn-tab:link,
+.btn-tab:visited {
+  display: inline-block;
+
+  font-family: $font-primary;
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: $color-black;
+  text-decoration: none;
+  padding: 0 2.4rem 2.56rem 2.4rem;
+}
+.btn-box {
+  display: flex;
+  gap: 5rem;
+}
+.btn-bay {
+  color: $color-white;
+  background-color: $color-orange-dark;
+  padding: 1.6rem 8rem 1.6rem 8rem;
+}
+
+.btn-add-to {
+  color: $color-orange-dark;
+  border: 2px solid $color-orange-dark;
+
+  padding: 1.6rem 4rem;
+}
+
+.section {
+  max-width: 192rem;
+  max-height: 100%;
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+.small-icon {
+  max-height: 1.6rem;
+  max-width: auto;
+}

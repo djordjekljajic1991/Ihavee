@@ -1,0 +1,46 @@
+.section_other-product {
+  display: flex;
+  flex-direction: column;
+  background-color: $color-background-grey-light;
+}
+.other-product-heading {
+  align-self: center;
+  margin: 12.8rem auto 2.4rem auto;
+}
+.other-product-description {
+  align-self: center;
+  margin-left: 2.4rem auto;
+}
+.description-wrap {
+  max-width: 59.6rem;
+}
+
+.other-product-picture-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin: 6.4rem auto 5rem auto;
+
+  @include respond(fix-other) {
+    gap: 0.1rem;
+  }
+  @include respond(tab-land) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+.other-product-picture-box {
+  display: grid;
+  justify-items: center;
+  margin-top: 2.4rem;
+  row-gap: 1.6rem;
+  text-align: center;
+}
+
+.other-img {
+  max-width: 39.4rem;
+  height: auto;
+  @include respond(fix-other) {
+    max-width: 28rem;
+  }
+}

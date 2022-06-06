@@ -1,0 +1,104 @@
+.footer {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
+
+  background-color: $color-background-grey-light;
+  padding-top: 13.2rem;
+  padding-bottom: 12.8rem;
+}
+.address-col {
+  margin-left: 14.2rem;
+  flex-grow: 1.6rem;
+  @include respond(fix-other) {
+    margin-left: 7.2rem;
+  }
+}
+.contacts {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.6rem;
+}
+.nav-col-2 {
+  justify-self: center;
+}
+
+.footer-heading {
+  font-family: $font-secondary;
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: $color-grey-description;
+  text-transform: uppercase;
+  margin-bottom: 4.4rem;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 0.8rem;
+  margin-bottom: 4.4rem;
+}
+.footer-link {
+  font-family: $font-secondary;
+  font-weight: 400;
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: $color-grey-description;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: $color-grey-description;
+}
+
+.footer-link:hover {
+  cursor: pointer;
+}
+.address {
+  font-size: 1.8rem;
+  font-family: $font-secondary;
+  font-weight: 400;
+  color: $color-grey-description;
+}
+.phone-number {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1.8rem;
+}
+.headphones {
+  height: 4rem;
+  width: 4rem;
+  padding-right: 0.8rem;
+}
+.bold {
+  font-weight: 600;
+}
+.call-us {
+  display: flex;
+  flex-direction: column;
+}
+.call {
+  font-family: $font-secondary;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: $color-grey-description;
+}
+.copyright {
+  background-color: $color-background-grey-dark;
+  font-family: $font-primary;
+  font-size: 2.2rem;
+  color: $color-grey-description;
+  padding: 4rem 0 4rem 14.1rem;
+  padding-left: 14.1rem;
+  & span {
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+}
