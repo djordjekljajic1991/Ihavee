@@ -128,12 +128,25 @@ html {
   margin-bottom: 0.8rem;
 }
 
+@media only screen and (max-width: 39.25em) {
+  .heading-1 {
+    font-size: 4.8rem;
+  }
+}
+
 .heading-2 {
   font-family: "Oswald", sans-serif;
   font-weight: 500;
   font-size: 5rem;
   color: #000;
   letter-spacing: 0;
+}
+
+@media only screen and (max-width: 26.86em) {
+  .heading-2 {
+    font-size: 3.8rem;
+    line-height: 1.05;
+  }
 }
 
 .heading-3 {
@@ -192,6 +205,7 @@ html {
 @media only screen and (max-width: 39.25em) {
   .galery_header-box {
     grid-template-columns: 1fr;
+    justify-items: center;
   }
 }
 
@@ -221,7 +235,6 @@ html {
 @media only screen and (max-width: 78.13em) {
   .galery-lists {
     grid-template-columns: repeat(2, 1fr);
-    max-width: 28.6rem;
     gap: 5rem;
   }
 }
@@ -234,10 +247,6 @@ html {
   .galery-lists li:first-child {
     grid-column: 1/-1;
   }
-}
-
-.galery-list {
-  max-width: 11.8rem;
 }
 
 .picture-link {
@@ -275,7 +284,7 @@ html {
 @media only screen and (max-width: 39.25em) {
   #item-big-left {
     grid-column: 1;
-    margin-top: 4rem;
+    margin-top: 2rem;
   }
 }
 
@@ -402,6 +411,12 @@ html {
   }
 }
 
+@media only screen and (max-width: 56.25em) {
+  .main-box {
+    margin-left: 1rem;
+  }
+}
+
 .cover-box {
   justify-self: center;
   margin-left: 25rem;
@@ -464,6 +479,13 @@ html {
   font-weight: 500;
   font-family: "Oswald", sans-serif;
   color: #9c9c9c;
+}
+
+@media only screen and (max-width: 26.86em) {
+  .btn_box-header {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 .sefety-bay-user-img {
@@ -821,6 +843,12 @@ html {
   }
 }
 
+@media only screen and (max-width: 26.86em) {
+  .picture-order {
+    margin-top: 0rem;
+  }
+}
+
 .data-container {
   display: flex;
   flex-direction: column;
@@ -843,6 +871,12 @@ html {
 @media only screen and (max-width: 56.25em) {
   .order-form {
     max-width: 35rem;
+  }
+}
+
+@media only screen and (max-width: 26.86em) {
+  .order-form {
+    margin-bottom: 3rem;
   }
 }
 
@@ -1006,6 +1040,12 @@ html {
   margin-left: 2.4rem auto;
 }
 
+@media only screen and (max-width: 26.86em) {
+  .other-product-description {
+    margin: auto 1rem;
+  }
+}
+
 .description-wrap {
   max-width: 59.6rem;
 }
@@ -1027,6 +1067,12 @@ html {
   .other-product-picture-container {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
+  }
+}
+
+@media only screen and (max-width: 26.86em) {
+  .other-product-picture-container {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -1075,6 +1121,12 @@ html {
   .hero-box {
     align-items: center;
     margin: auto;
+  }
+}
+
+@media only screen and (max-width: 26.86em) {
+  .hero-box {
+    margin: auto 1rem;
   }
 }
 
@@ -1148,6 +1200,7 @@ html {
 
 .nav-col-2 {
   justify-self: center;
+  align-self: flex-start;
 }
 
 .footer-heading {

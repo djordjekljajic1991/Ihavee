@@ -20,6 +20,9 @@
     align-items: center;
     margin: auto;
   }
+  @include respond(small-phone) {
+    margin: auto 1rem;
+  }
 }
 
 .btn-box {

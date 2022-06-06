@@ -15,6 +15,11 @@ $font-secondary: "Roboto", sans-serif;
 //mixins
 
 @mixin respond($breakpoint) {
+  @if $breakpoint==small-phone {
+    @media only screen and(max-width: 26.86em) {
+      @content;
+    }
+  }
   @if $breakpoint==phone {
     @media only screen and(max-width: 39.25em) {
       @content;

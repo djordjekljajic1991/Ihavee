@@ -24,6 +24,7 @@
   }
   @include respond(phone) {
     grid-template-columns: 1fr;
+    justify-items: center;
   }
 }
 
@@ -44,7 +45,7 @@
   gap: 4rem;
   @include respond(tab-land) {
     grid-template-columns: repeat(2, 1fr);
-    max-width: 28.6rem;
+
     gap: 5rem;
   }
 
@@ -55,9 +56,9 @@
     }
   }
 }
-.galery-list {
-  max-width: 11.8rem;
-}
+// .galery-list {
+//   max-width: 11.8rem;
+// }
 .picture-link {
   max-height: 11.8rem;
   max-width: 11.8rem;
@@ -85,7 +86,7 @@
   }
   @include respond(phone) {
     grid-column: 1;
-    margin-top: 4rem;
+    margin-top: 2rem;
   }
 }
 
@@ -185,6 +186,9 @@
   @include respond(fix-other) {
     grid-template-columns: 1fr 12rem;
   }
+  @include respond(tab-port) {
+    margin-left: 1rem;
+  }
 }
 .cover-box {
   // position: relative;
@@ -241,6 +245,12 @@
   font-weight: 500;
   font-family: $font-primary;
   color: #9c9c9c;
+}
+.btn_box-header {
+  @include respond(small-phone) {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 .sefety-bay-user-img {
   margin-top: 3.2rem !important;

@@ -10,6 +10,9 @@
 .other-product-description {
   align-self: center;
   margin-left: 2.4rem auto;
+  @include respond(small-phone) {
+    margin: auto 1rem;
+  }
 }
 .description-wrap {
   max-width: 59.6rem;
@@ -27,6 +30,9 @@
   @include respond(tab-land) {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
+  }
+  @include respond(small-phone) {
+    grid-template-columns: 1fr;
   }
 }
 .other-product-picture-box {
