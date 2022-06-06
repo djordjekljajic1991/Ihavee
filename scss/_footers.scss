@@ -2,6 +2,10 @@
   display: grid;
   grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
 
+  @include respond(tab-land) {
+    grid-template-columns: 1.5fr repeat(3, 1fr);
+  }
+
   background-color: $color-background-grey-light;
   padding-top: 13.2rem;
   padding-bottom: 12.8rem;
@@ -89,6 +93,10 @@
   font-weight: 400;
   font-size: 1.2rem;
   color: $color-grey-description;
+}
+.footer-logo {
+  max-width: 11.9rem;
+  max-height: 3rem;
 }
 .copyright {
   background-color: $color-background-grey-dark;

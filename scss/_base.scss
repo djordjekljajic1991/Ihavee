@@ -16,7 +16,7 @@ $font-secondary: "Roboto", sans-serif;
 
 @mixin respond($breakpoint) {
   @if $breakpoint==phone {
-    @media only screen and(max-width: 40em) {
+    @media only screen and(max-width: 39.25em) {
       @content;
     }
   }
@@ -64,6 +64,9 @@ html {
   }
   @include respond(tab-port) {
     font-size: 43.75%; //7
+  }
+  @include respond(phone) {
+    font-size: 37.5%;
   }
 }
 
@@ -127,7 +130,12 @@ html {
   max-height: 100%;
   margin-left: 4rem;
   margin-right: 4rem;
+  @include respond(tab-land) {
+    max-width: 100%;
+    margin: 0;
+  }
 }
+
 .small-icon {
   max-height: 1.6rem;
   max-width: auto;
