@@ -5,11 +5,23 @@
   @include respond(fix-other) {
     grid-template-columns: 40rem 1fr;
   }
+  @include respond(tab-land) {
+    grid-template-columns: 1fr;
+  }
 }
 ///left box
 .galery_header-box {
   position: relative;
   background-color: $color-background-grey-dark;
+  @include respond(tab-land) {
+    grid-row: 2/3;
+  }
+  @include respond(tab-land) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    padding-top: 5rem;
+  }
 }
 
 .galery_header_lists-box {
@@ -17,18 +29,33 @@
   @include respond(fix-other) {
     margin-left: 9rem;
   }
+  @include respond(tab-land) {
+    max-width: 57.4rem;
+    margin: 0;
+  }
 }
 
 .galery-lists {
   display: grid;
   grid-template-columns: 1fr;
   gap: 4rem;
+  @include respond(tab-land) {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 28.6rem;
+    gap: 5rem;
+  }
 
   & li:first-child {
     margin-bottom: 8.2rem;
+    @include respond(tab-land) {
+      grid-column: 1/-1;
+    }
   }
 }
-.list-item {
+.galery-list {
+  max-width: 11.8rem;
+}
+.picture-link {
   max-height: 11.8rem;
   max-width: 11.8rem;
 }
@@ -46,6 +73,12 @@
     height: 58.9rem;
     width: 46.3rem;
     transform: translate(45%, -120%);
+  }
+  @include respond(tab-land) {
+    position: relative;
+    grid-column: 2/-1;
+    transform: translate(0, 0);
+    align-self: center;
   }
 }
 

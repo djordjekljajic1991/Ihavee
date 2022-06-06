@@ -23,6 +23,12 @@ html {
   }
 }
 
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 43.75%;
+  }
+}
+
 .lists {
   list-style: none;
   display: flex;
@@ -144,9 +150,30 @@ html {
   }
 }
 
+@media only screen and (max-width: 78.13em) {
+  .section-header {
+    grid-template-columns: 1fr;
+  }
+}
+
 .galery_header-box {
   position: relative;
   background-color: #dfe3eb;
+}
+
+@media only screen and (max-width: 78.13em) {
+  .galery_header-box {
+    grid-row: 2/3;
+  }
+}
+
+@media only screen and (max-width: 78.13em) {
+  .galery_header-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    padding-top: 5rem;
+  }
 }
 
 .galery_header_lists-box {
@@ -159,17 +186,42 @@ html {
   }
 }
 
+@media only screen and (max-width: 78.13em) {
+  .galery_header_lists-box {
+    max-width: 57.4rem;
+    margin: 0;
+  }
+}
+
 .galery-lists {
   display: grid;
   grid-template-columns: 1fr;
   gap: 4rem;
 }
 
+@media only screen and (max-width: 78.13em) {
+  .galery-lists {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 28.6rem;
+    gap: 5rem;
+  }
+}
+
 .galery-lists li:first-child {
   margin-bottom: 8.2rem;
 }
 
-.list-item {
+@media only screen and (max-width: 78.13em) {
+  .galery-lists li:first-child {
+    grid-column: 1/-1;
+  }
+}
+
+.galery-list {
+  max-width: 11.8rem;
+}
+
+.picture-link {
   max-height: 11.8rem;
   max-width: 11.8rem;
 }
@@ -189,6 +241,15 @@ html {
     height: 58.9rem;
     width: 46.3rem;
     transform: translate(45%, -120%);
+  }
+}
+
+@media only screen and (max-width: 78.13em) {
+  #item-big-left {
+    position: relative;
+    grid-column: 2/-1;
+    transform: translate(0, 0);
+    align-self: center;
   }
 }
 
@@ -608,6 +669,7 @@ html {
   grid-template-columns: 1fr 1fr;
   justify-items: end;
   margin: 0 auto 0 auto;
+  align-items: center;
 }
 
 .picture-container {
@@ -970,10 +1032,15 @@ html {
   font-size: 2.2rem;
   color: #656565;
   padding: 4rem 0 4rem 14.1rem;
-  padding-left: 14.1rem;
 }
 
 .copyright span {
   text-transform: uppercase;
   font-weight: 500;
+}
+
+@media only screen and (max-width: 95.43em) {
+  .copyright {
+    padding-left: 7.2rem;
+  }
 }

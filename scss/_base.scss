@@ -22,8 +22,8 @@ $font-secondary: "Roboto", sans-serif;
   }
 
   @if $breakpoint==tab-port {
-    @media only screen and (max-width: 59em) {
-      @content;
+    @media only screen and (max-width: 56.25em) {
+      @content; //900
     }
   }
 
@@ -60,7 +60,10 @@ html {
     font-size: 56.25%; //9
   }
   @include respond(tab-land) {
-    font-size: 50%;
+    font-size: 50%; //8
+  }
+  @include respond(tab-port) {
+    font-size: 43.75%; //7
   }
 }
 
