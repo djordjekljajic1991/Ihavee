@@ -12,7 +12,9 @@
   @include respond(phone) {
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
-    align-items: center;
+    align-items: flex-start;
+    row-gap: 6rem;
+    padding-left: 2rem;
   }
   //   @include respond(small-phone) {
   //     grid-template-columns: 1fr;
@@ -24,6 +26,9 @@
   flex-grow: 1.6rem;
   @include respond(fix-other) {
     margin-left: 7.2rem;
+  }
+  @include respond(small-phone) {
+    margin-left: 0;
   }
 }
 .contacts {
@@ -87,8 +92,8 @@
   margin-top: 1.8rem;
 }
 .headphones {
-  height: 4rem;
-  width: 4rem;
+  max-height: 4rem;
+  max-width: 4rem;
   padding-right: 0.8rem;
 }
 .bold {
@@ -121,5 +126,9 @@
   }
   @include respond(fix-other) {
     padding-left: 7.2rem;
+  }
+  @include respond(small-phone) {
+    padding-left: 2rem;
+    font-size: 1.6rem;
   }
 }

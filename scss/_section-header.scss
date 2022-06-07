@@ -48,20 +48,29 @@
 
     gap: 5rem;
   }
+  @include respond(small-phone) {
+    gap: 2rem;
+  }
 
   & li:first-child {
     margin-bottom: 8.2rem;
     @include respond(tab-land) {
       grid-column: 1/-1;
     }
+    @include respond(small-phone) {
+      margin-bottom: 5rem;
+    }
   }
 }
-// .galery-list {
-//   max-width: 11.8rem;
-// }
+.picture-logo-link {
+  max-width: 20rem;
+  max-height: auto;
+}
 .picture-link {
   max-height: 11.8rem;
   max-width: 11.8rem;
+  @include respond(small-phone) {
+  }
 }
 
 //change picture in header
@@ -87,6 +96,9 @@
   @include respond(phone) {
     grid-column: 1;
     margin-top: 2rem;
+  }
+  @include respond(small-phone) {
+    max-width: 36.3rem;
   }
 }
 
@@ -174,6 +186,10 @@
     align-self: end;
   }
 }
+.navigation-icon {
+  max-width: 2.4rem;
+  max-height: auto;
+}
 .navigation_button-hidden {
   display: none;
 }
@@ -190,6 +206,7 @@
     margin-left: 1rem;
   }
 }
+
 .cover-box {
   // position: relative;
   justify-self: center;
@@ -215,6 +232,9 @@
   gap: 5rem;
   margin-top: 3.6rem;
   margin-bottom: 4.9rem;
+  @include respond(phone) {
+    flex-direction: column;
+  }
 }
 
 .quantity-box {
@@ -226,6 +246,9 @@
   padding: 0rem 3rem;
   & span {
     padding-top: 0.3rem;
+  }
+  @include respond(small-phone) {
+    padding: auto 1rem;
   }
 }
 .quantity-field {

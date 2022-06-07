@@ -128,9 +128,9 @@ html {
   margin-bottom: 0.8rem;
 }
 
-@media only screen and (max-width: 39.25em) {
+@media only screen and (max-width: 26.86em) {
   .heading-1 {
-    font-size: 4.8rem;
+    font-size: 4.5rem;
   }
 }
 
@@ -149,11 +149,23 @@ html {
   }
 }
 
+@media only screen and (max-width: 39.25em) {
+  .heading-2 {
+    font-size: 2.8rem;
+  }
+}
+
 .heading-3 {
   font-family: "Oswald", sans-serif;
   font-weight: 500;
   font-size: 3.6rem;
   color: #000;
+}
+
+@media only screen and (max-width: 26.86em) {
+  .heading-3 {
+    font-size: 2.8rem;
+  }
 }
 
 .other-product-price {
@@ -239,6 +251,12 @@ html {
   }
 }
 
+@media only screen and (max-width: 26.86em) {
+  .galery-lists {
+    gap: 2rem;
+  }
+}
+
 .galery-lists li:first-child {
   margin-bottom: 8.2rem;
 }
@@ -247,6 +265,17 @@ html {
   .galery-lists li:first-child {
     grid-column: 1/-1;
   }
+}
+
+@media only screen and (max-width: 26.86em) {
+  .galery-lists li:first-child {
+    margin-bottom: 5rem;
+  }
+}
+
+.picture-logo-link {
+  max-width: 20rem;
+  max-height: auto;
 }
 
 .picture-link {
@@ -285,6 +314,12 @@ html {
   #item-big-left {
     grid-column: 1;
     margin-top: 2rem;
+  }
+}
+
+@media only screen and (max-width: 26.86em) {
+  #item-big-left {
+    max-width: 36.3rem;
   }
 }
 
@@ -396,6 +431,11 @@ html {
   }
 }
 
+.navigation-icon {
+  max-width: 2.4rem;
+  max-height: auto;
+}
+
 .navigation_button-hidden {
   display: none;
 }
@@ -449,6 +489,12 @@ html {
   margin-bottom: 4.9rem;
 }
 
+@media only screen and (max-width: 39.25em) {
+  .price-quantity-cel {
+    flex-direction: column;
+  }
+}
+
 .quantity-box {
   display: flex;
   height: 5rem;
@@ -460,6 +506,12 @@ html {
 
 .quantity-box span {
   padding-top: 0.3rem;
+}
+
+@media only screen and (max-width: 26.86em) {
+  .quantity-box {
+    padding: auto 1rem;
+  }
 }
 
 .quantity-field {
@@ -845,6 +897,7 @@ html {
 
 @media only screen and (max-width: 26.86em) {
   .picture-order {
+    max-width: 37rem;
     margin-top: 0rem;
   }
 }
@@ -986,6 +1039,12 @@ html {
   }
 }
 
+@media only screen and (max-width: 26.86em) {
+  .description_box {
+    max-width: 90%;
+  }
+}
+
 .description_navigation {
   display: flex;
   gap: 3.2rem;
@@ -994,6 +1053,12 @@ html {
   text-transform: uppercase;
   justify-content: space-between;
   transform: translateY(0.6rem);
+}
+
+@media only screen and (max-width: 26.86em) {
+  .description_navigation {
+    gap: 1.8rem;
+  }
 }
 
 .btn-tab,
@@ -1006,6 +1071,14 @@ html {
   color: #000;
   text-decoration: none;
   padding: 0 2.4rem 2.56rem 2.4rem;
+}
+
+@media only screen and (max-width: 39.25em) {
+  .btn-tab,
+  .btn-tab:link,
+  .btn-tab:visited {
+    font-size: 1.8rem;
+  }
 }
 
 .description_text-box {
@@ -1126,7 +1199,13 @@ html {
 
 @media only screen and (max-width: 26.86em) {
   .hero-box {
-    margin: auto 1rem;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 26.86em) {
+  .hero-box {
+    max-width: 90%;
   }
 }
 
@@ -1177,7 +1256,9 @@ html {
   .footer {
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
-    align-items: center;
+    align-items: flex-start;
+    row-gap: 6rem;
+    padding-left: 2rem;
   }
 }
 
@@ -1189,6 +1270,12 @@ html {
 @media only screen and (max-width: 95.43em) {
   .address-col {
     margin-left: 7.2rem;
+  }
+}
+
+@media only screen and (max-width: 26.86em) {
+  .address-col {
+    margin-left: 0;
   }
 }
 
@@ -1258,8 +1345,8 @@ html {
 }
 
 .headphones {
-  height: 4rem;
-  width: 4rem;
+  max-height: 4rem;
+  max-width: 4rem;
   padding-right: 0.8rem;
 }
 
@@ -1300,5 +1387,12 @@ html {
 @media only screen and (max-width: 95.43em) {
   .copyright {
     padding-left: 7.2rem;
+  }
+}
+
+@media only screen and (max-width: 26.86em) {
+  .copyright {
+    padding-left: 2rem;
+    font-size: 1.6rem;
   }
 }

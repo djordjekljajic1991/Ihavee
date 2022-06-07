@@ -42,6 +42,7 @@
     max-width: 47rem;
   }
   @include respond(small-phone) {
+    max-width: 37rem;
     margin-top: 0rem;
   }
 }
