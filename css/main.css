@@ -1408,6 +1408,7 @@ html {
   justify-content: center;
   gap: 4.8rem;
   background-color: #ebeff7;
+  animation: mymove 0.5s ease-in;
   position: absolute;
   top: 0;
   left: 0;
@@ -1418,6 +1419,15 @@ html {
 .mobile_navigation a {
   font-size: 4rem;
   color: #ff9300;
+}
+
+@keyframes mymove {
+  from {
+    background-color: #ebeff700;
+  }
+  to {
+    background-color: #ebeff7ff;
+  }
 }
 
 .stars_hidden {

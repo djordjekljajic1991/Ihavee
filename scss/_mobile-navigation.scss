@@ -9,6 +9,7 @@
   justify-content: center;
   gap: 4.8rem;
   background-color: $color-background-grey-light;
+  animation: mymove 0.5s ease-in;
   position: absolute;
   top: 0;
   left: 0;
@@ -18,8 +19,16 @@
     font-size: 4rem;
     color: $color-orange-dark;
   }
-  //font-size: 20rem;
 }
+@keyframes mymove {
+  from {
+    background-color: #ebeff700;
+  }
+  to {
+    background-color: #ebeff7ff;
+  }
+}
+
 .stars_hidden {
   opacity: 0%;
 }
