@@ -69,8 +69,6 @@
 .picture-link {
   max-height: 11.8rem;
   max-width: 11.8rem;
-  @include respond(small-phone) {
-  }
 }
 
 //change picture in header
@@ -169,6 +167,7 @@
   // letter-spacing: 0.72px;
 }
 
+
 .header_button-lists {
   display: flex;
   flex-direction: row;
@@ -232,7 +231,7 @@
   gap: 5rem;
   margin-top: 3.6rem;
   margin-bottom: 4.9rem;
-  @include respond(phone) {
+  @include respond(small-phone) {
     flex-direction: column;
   }
 }

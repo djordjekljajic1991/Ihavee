@@ -15,7 +15,7 @@ document
   .querySelector(".navigation-lists")
   .addEventListener("click", function (e) {
     e.preventDefault();
-    console.log(e);
+
     if (e.target.classList.contains("header-nav-link")) {
       const id = e.target.getAttribute("href");
       console.log(id);
@@ -92,4 +92,19 @@ tabsContainer.addEventListener("click", function (e) {
     .classList.add("description_text-active");
 });
 
-///Kolicina
+///////mobile navigation
+
+const openMNB = document.querySelector(".btn_open-nav");
+const stars = document.querySelector(".star");
+const navList = document.querySelector(".navigation-lists");
+const outside = document.querySelector(".navigation-lists");
+
+openMNB.addEventListener("click", function () {
+  navList.classList.add("mobile_navigation");
+  stars.classList.add("stars_hidden");
+});
+
+outside.addEventListener("click", function () {
+  navList.classList.remove("mobile_navigation");
+  stars.classList.remove("stars_hidden");
+});
