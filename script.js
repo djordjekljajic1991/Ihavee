@@ -31,14 +31,13 @@ let a = 1;
 getIncrement.addEventListener("click", (e) => {
   e.preventDefault();
   a++;
-  a = a < 10 ? "0" + a : a;
   totalCount.innerText = a;
 });
 getDecrement.addEventListener("click", (e) => {
   e.preventDefault();
   if (a > 1) {
     a--;
-    a = a < 10 ? "0" + a : a;
+
     totalCount.innerText = a;
   }
 });
